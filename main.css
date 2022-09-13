@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+*{
+
+	box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+html {
+	height: 100%;
+}
+
+body{
+	margin:0;
+	padding: 0;
+	background:rgb(255, 255, 255);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	display: flex;
+	justify-content: space-between;
+	max-height: 1440px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background: white;
+}
+
+
+.mobile{
+	display:none;
+}
+
+.web{
+	display: block;
+}
+
+.containerMain{
+	background-image: url("base-apparel-coming-soon-master/images/bg-pattern-desktop.svg");
+	position: relative;
+	width: 60%;
+	max-width: 800px;
+	padding:100px;
+}
+
+.containerPhoto{
+	max-height:800px;
+	width:610px ;
+	right: 0px;
+}
+
+.containerPhoto img{
+	height: 100%;
+	max-height: 800px;
+	object-fit: cover;
+	min-width:100%;
+}
+
+img{
+	height: auto;
+	object-fit: fill;
+
+}
+
+
+.iconicTitle{
+	font-weight: bolder;
+}
+
+
+.fontSizeHigh{
+	font-size: 3.2em;
+	margin: 2.7em 0 1em 0;
+	letter-spacing: 0.3em;
+}
+
+.fontSizeMed{
+	font-size: 1.2em;
+	line-height: 1.6;
+}
+
+.fontColorNo02{
+	color: hsl(0, 36%, 70%);
+}
+
+
+.fontColorNo01{
+	color:hsl(0, 6%, 24%);
+}
+
+.inputArea{
+	border-style:solid;
+	border-color: hsla(0, 6%, 24%, 0.41);
+	border-width: 1px;
+	height: 2.2em;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 2em;
+}
+
+.inputNormal{
+	width: 82%;
+	height: 100%;
+	margin-left: 1em;
+	background-color:inherit;
+	border-style: none;	
+}
+
+.inputError{
+	width: 82%;
+	height: 100%;
+	margin-left: 1em;
+	background-color:inherit;
+	border-style: none;
+	background-image: url("base-apparel-coming-soon-master/images/icon-error.svg");
+	background-repeat: no-repeat;
+	background-position-x:right;
+	background-position-y: center;
+	
+}
+
+.iconicTitle{
+	background-image: url("base-apparel-coming-soon-master/images/logo.svg");
+	background-repeat: no-repeat;
+	background-position-x:left ;
+	background-position-y: center;
+	width:158px;
+	height:33px;
+
+}
+
+
+.buttonSubmitEmail{
+	width: calc(5em + 3px);
+	height:calc(3em + 3px);
+	border-radius: 20px;
+	background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.buttonArrow{
+	background-image: url("base-apparel-coming-soon-master/images/icon-arrow.svg");
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	width: 3px;
+	padding: 8px;
+}
+
+input:focus, button:focus{
+	outline: none;
+}
+
+.redText{
+	color: red;
+	margin: 0.5em 1em;
+}
+
+.blueText{
+	color:royalblue;
+	margin: 0.5em 1em;
+}
+
+/* ========================================================= MEDIA QUERY ============================================ */
+/* ========================================================= MEDIA QUERY ============================================ */
+/* ========================================================= MEDIA QUERY ============================================ */
+
+@media screen and (max-width: 810px) {	
+	*{
+	box-sizing: border-box;
+	}
+	.containerMain{
+		display:flex;
+		flex-direction: column;
+		justify-content:space-around;
+		width: 100%;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+
+	.container{
+		display: flex;
+		margin: 0;
+		padding: 0;
+		min-height: 100%;
+	}
+
+	.iconicTitle{
+		margin: 0 30px;
+		padding: 0;
+	}
+
+	.fontSizeHigh{
+		margin: 0 15px;
+		padding: 0;
+		font-size:2.2em;
+		text-align: center;
+	}
+
+	.fontSizeMed{
+		margin: 0 15px;
+		padding: 0;
+		text-align: center;
+		font-size: 1.2em;
+		line-height: 1.1;
+	}
+
+	.inputArea{
+		margin: 0 15px;
+		padding: 0;
+		font-size: 1.2em;
+	}
+	.containerPhoto{
+		width: 100%;
+		height: auto;
+		
+		margin: 0;
+		padding: 0;
+	}
+
+	.redText{
+		text-align: center;
+	}
+	
+	.blueText{
+		text-align: center;
+		
+	}
+
+	.mobile{
+		display:block;
+	}
+	.web{
+		display: none;
+	}
+  }
